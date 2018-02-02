@@ -1,0 +1,26 @@
+<% if books.any? %>
+  <div class="row mt-3">
+    <% books.each_slice(3) do |books| %>
+      <% books.each do |book| %>
+        <div class="col-sm-4">
+          <div class="card text-white bg-dark mb-3">
+            <div class="card-header">
+              <h2><%= book.name %></h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">by <%= book.author_name %> - <%= book.isbn %></h5>
+              <p class="card-text small"><%= book.description %></p>
+              <p>
+                <% book.tags.each do |tag| %>
+                <span class="badge badge-light"><%= tag %></span>
+                <% end %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no books yet.</p>
+<% end %>

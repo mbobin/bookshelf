@@ -1,0 +1,6 @@
+#!/home/marius/.rubies/ruby-2.4.3/bin/ruby
+
+require "shellwords"
+require "fileutils"
+
+puts "hello world"
