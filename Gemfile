@@ -10,7 +10,7 @@ gem 'xml-to-json'
 gem 'hanami-shrine'
 gem 'hanami-bootstrap'
 gem 'jquery-hanami'
-gem 'octicons'
+gem 'hanami-octicons'
 
 group :development do
   # Code reloading
