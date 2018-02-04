@@ -115,7 +115,6 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.3)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     octicons (5.2.0)
@@ -151,6 +150,23 @@ GEM
       dry-types (~> 0.11.0)
       rom (~> 3.2, >= 3.2.2)
       sequel (~> 4.43)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-hanami (0.2.0)
+      hanami
+      rspec
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    ruby-rc4 (0.1.5)
     sequel (4.49.0)
     shotgun (0.9.2)
       rack (>= 1.0)
@@ -184,6 +200,7 @@ DEPENDENCIES
   pg
   pry
   rake
+  rspec-hanami
   shotgun
   xml-to-json
 
