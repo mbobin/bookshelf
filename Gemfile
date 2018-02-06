@@ -6,11 +6,13 @@ gem 'hanami-model', '~> 1.1'
 gem 'pry'
 
 gem 'pg'
-gem 'xml-to-json'
 gem 'hanami-shrine'
 gem 'hanami-bootstrap'
 gem 'jquery-hanami'
 gem 'hanami-octicons'
+gem 'nokogiri'
+gem 'loofah'
+gem 'isbn_extractor', github: 'mbobin/isbn_extractor'
 
 group :development do
   # Code reloading
