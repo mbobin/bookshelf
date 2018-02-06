@@ -19,8 +19,9 @@ module Web
       # When you add new directories, remember to add them here.
       #
       load_paths << [
+        'helpers',
         'controllers',
-        'views'
+        'views',
       ]
 
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
@@ -271,6 +272,7 @@ module Web
         include Hanami::Helpers
         include Web::Assets::Helpers
         include Hanami::Octicons::Helper
+        include Web::Helpers::StringTruncation
       end
     end
 
