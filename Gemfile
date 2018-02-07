@@ -7,6 +7,7 @@ gem 'pry'
 
 gem 'pg'
 gem 'hanami-shrine'
+gem 'hanami-pagination'
 gem 'hanami-bootstrap'
 gem 'jquery-hanami'
 gem 'hanami-octicons'

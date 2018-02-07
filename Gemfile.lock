@@ -1,11 +1,12 @@
 GIT
   remote: git://github.com/mbobin/isbn_extractor.git
-  revision: 6e36c066e5b9900a4bb211155165edefec3037a9
+  revision: 0fcdffa59d3fbe8a39b4b27ecec4c49e34b08f00
   specs:
     isbn_extractor (0.0.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       epub-parser (~> 0.2, >= 0.2.6)
       henkei (~> 1.14, >= 1.14.3)
+      mime-types
       pdf-reader (~> 2.0)
 
 GEM
@@ -111,6 +112,9 @@ GEM
     hanami-octicons (0.1.0)
       hanami-helpers (~> 1.1)
       octicons (~> 5.2)
+    hanami-pagination (0.2.0)
+      hanami-helpers (~> 1.1)
+      hanami-model (~> 1.0)
     hanami-router (1.1.0)
       hanami-utils (~> 1.1)
       http_router (= 0.11.2)
@@ -234,6 +238,7 @@ DEPENDENCIES
   hanami-bootstrap
   hanami-model (~> 1.1)
   hanami-octicons
+  hanami-pagination
   hanami-shrine
   isbn_extractor!
   jquery-hanami

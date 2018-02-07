@@ -4,10 +4,13 @@
         <% books.each do |book| %>
           <div class="card text-white bg-dark">
               <div class="card-body">
-                <h5 class="card-title"><%= book.name %></h5>
+                <h5 class="card-title">
+                  <%= book.name %>
+                  <%= octicon "pencil" %>
+                </h5>
 
                 <p class="card-text">by <%= book.author_name %> - <%= book.isbn %></p>
-                <p class="card-text small"><%= truncate book.description, 250 %></p>
+                <p class="card-text small"><%= truncate book.description, 500 %></p>
               </div>
               <div class="card-footer">
                 <% book.tags.each do |tag| %>
