@@ -8,6 +8,8 @@ module Pipeline
       options = Pipeline::IsbnMetadata.call(options)
       options = Pipeline::AddAuthor.call(options)
       options = Pipeline::AddBook.call(options)
+      options = Pipeline::AddVersion.call(options)
+      options = Pipeline::AddDocument.call(options)
       options
 
     rescue => error
