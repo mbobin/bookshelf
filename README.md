@@ -1,5 +1,7 @@
 # Bookshelf
 
+Not active
+
 Welcome to your new Hanami project!
 
 ## Setup
